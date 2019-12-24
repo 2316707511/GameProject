@@ -1,0 +1,20 @@
+NEED:
+	tools:
+		docker
+		redis-cli
+
+	library:
+		jsoncpp
+		hiredis
+		libevent
+	
+	file:
+		container_manager.out
+		create_room.sh
+
+
+#1docker pull xiazheng/game:v1.0.0
+#2docker tag xiazheng/game:v1.0.0 game:v1.0.0
+#3 (MAIN SERVER)vim user_opt.cpp
+#4 (MAIN SERVER)string server_array[] = { "ip1" , "ip2" , "ip3" , ... , "ip_cur"};
+#5 myip=ip_cur ./container_manager
